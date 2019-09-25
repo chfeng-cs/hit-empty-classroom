@@ -1,0 +1,24 @@
+view {
+  font-family: -apple-system,BlinkMacSystemFont,SF UI Text,Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei UI,Microsoft YaHei,Arial,sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  margin-top: 200px;
+}
+.name {
+  font-weight: bold;
+  font-size: 20pt;
+  align-items: center;
+  align-content: center;
+}
+.end {
+  width: 70%;
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 300ms;
+}

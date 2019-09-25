@@ -1,0 +1,37 @@
+<view>
+
+  <view class="section__level1">
+    <navigator class="section__level2" url="../version/version">
+      <view class="section__level3">
+        <view class="title">版本信息</view>
+        <image src="../../svg/arrow.svg" class="svg-arrow"></image>
+      </view>
+    </navigator>
+
+    <navigator class="section__level2 last-child" url="../new/new">
+      <view class="section__level3">
+        <view class="title">新功能预告</view>
+        <image src="../../svg/arrow.svg" class="svg-arrow"></image>
+      </view>
+    </navigator>
+
+  </view>
+
+  <view class="section__level1">
+
+    <navigator class="section__level2" url="../announce/announce">
+      <view class="section__level3">
+        <view class="title">声明</view>
+        <image src="../../svg/arrow.svg" class="svg-arrow"></image>
+      </view>
+    </navigator>
+    
+    <navigator class="section__level2 last-child"  url="../feedback/feedback">
+      <view class="section__level3">
+        <view class="title">反馈建议</view>
+        <image src="../../svg/arrow.svg" class="svg-arrow"></image>
+      </view>
+    </navigator>
+  </view>
+
+</view>

@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="name">哈工大空教室查询</view>
+  <view class="version">Version 1.0.0</view>
+</view>
+
+<view class="end">同学们的使用是我开发的最大动力，欢迎反馈各种问题。</view>

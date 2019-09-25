@@ -1,0 +1,18 @@
+<!--miniprogram/pages/announce/announce.wxml-->
+<text>声明</text>
+
+<view class="section">
+<view class="question">空教室数据来源与质量</view>
+
+<view class="answer">数据从教务处爬取，删去了不常用的教室地点（个人认为不常用），更新频率暂不确定，由于本人对多线程爬取信息以及丢包等异常情况处理得不好，更新频率暂时可能会比较低，空教室信息仅供参考，大部分情况下仍是准确的，请以教务处网站信息和实际情况为准。</view>
+<!-- <image src="../../images/gezi.jpg"></image> -->
+</view>
+
+<view class="section">
+<view class="question">面向用户</view>
+<view class="answer">由于是校内信息，所以只面向工大同学，以后可能会增加校内人员认证。</view>
+</view>
+
+
+<!-- <view class="question"></view>
+<view class="answer"></view> -->

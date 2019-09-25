@@ -1,0 +1,88 @@
+<view>
+  <view id="#top">
+  <view class="section__level1">
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class="section__level2">
+      <image src="../../svg/room.svg" class="svg-icon"></image>
+      <view class="section__level3">
+        <view class="title">楼层</view>
+        <view class="picker">
+          {{multiArray[0][multiIndex[0]]}} ➢ {{multiArray[1][multiIndex[1]]}} ➢ {{multiArray[2][multiIndex[2]]}}
+        </view>
+        <image src="../../svg/arrow.svg" class="svg-arrow"></image>
+      </view>
+      
+    </view>
+    </picker>
+
+    <picker mode="date" value="{{date}}" start="2019-09-02" end="2020-01-05" bindchange="bindDateChange">
+    <view class="section__level2 last-child">
+      <image src="../../svg/date.svg" class="svg-icon"></image>
+      <view class="shuangceng">
+        <view class="title">查询日期</view>
+        <view class="picker">
+          <text class="picker-top">{{date}}</text>
+          <text class="picker-bottom">{{week}}</text>
+        </view>
+        <image src="../../svg/arrow.svg" class="svg-arrow"></image>
+      </view>
+    </view>
+    </picker>
+
+    <!-- <view class="section__level2">
+      <image class="svg-icon" src="../../svg/show-only.svg"></image>
+      <view class="section__level3">
+        <view class="title">只显示可用教室</view>
+        <switch checked bindchange="bindSwitchChange"></switch>
+      </view>
+    </view> -->
+  </view>
+
+  <view class="section__level1">
+     <view>
+      <button type="primary" size="default" bindtap="bindButtonTap" loading="{{loading}}">
+        <text wx:if="{{loading}}"></text>
+        <text wx:else>查询</text>
+      </button>
+     </view>
+   </view>
+  </view>
+
+  <view wx:if="{{nameList}}" class="jstable">
+    <view class="tr">
+      <view class="td" style="width:10em;"></view>
+        <!-- <view class="th"> -->
+          <view class="td square"><text>1-2</text></view>
+          <view class="td square"><text>3-4</text></view>
+          <view class="td square"><text>5-6</text></view>
+          <view class="td square"><text>7-8</text></view>
+          <view class="td square"><text>9-10</text></view>
+          <view class="td square"><text>11-12</text></view>
+        <!-- </view> -->
+    </view>
+  </view>
+
+  <scroll-view scroll-y class="scroll" style="height:{{scrollHeight}}px;">
+    <view wx:for="{{nameList}}" wx:for-index="i">
+      <view class="tr">
+        <view class="td" style="width:10em;">{{item}}</view>
+        <view wx:for="{{infoList[i]}}" wx:for-item="item2" class="td">
+          <view wx:if="{{item2}}" class="fkjs">
+            <image src="../../svg/taken-888888.svg"></image>
+          </view>
+          <view wx:else class="kjs">
+            <image src="../../svg/empty-0.svg"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class="end">
+    <navigator url="../about/about">
+      <image src="../../svg/question-mark.svg"></image>
+    </navigator>
+  </view>
+
+
+</view>

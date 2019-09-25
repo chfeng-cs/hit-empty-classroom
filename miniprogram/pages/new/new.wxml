@@ -1,0 +1,7 @@
+<view class="section">
+<view class="question">教室收藏功能</view>
+<view class="answer">可以收藏你经常去的教室啦（如果用户达到200人我就会做）</view>
+<view class="question">教室筛选功能</view>
+<view class="answer">可以不显示34节 或者56节被占用的教室，只显示能去的教室（如果用户达到300人我就会做）</view>
+<!-- <image src="../../images/gezi.jpg"></image> -->
+</view>

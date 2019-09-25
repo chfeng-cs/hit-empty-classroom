@@ -1,0 +1,23 @@
+/* miniprogram/pages/announce/announce.wxss */
+text {
+   padding-left: 20rpx;
+}
+.section image {
+  width: 176rpx;
+  height: 198rpx;
+}
+.section {
+  background: #ffffff;
+  margin-top: 8rpx;
+  margin-bottom: 8rpx;
+  padding: 20rpx;
+}
+.question {
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  font-size: 14pt;
+}
+.answer {
+  font-size: 11pt;
+  color: #888888;
+}
